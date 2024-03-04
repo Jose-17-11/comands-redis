@@ -43,3 +43,26 @@
 * **ZSCORE** : Devuelve el puntaje de un miembro específico en un conjunto ordenado.
 * **ZREMRANGEBYRANK** : Elimina elementos dentro de un rango de índices de ordenación de un conjunto ordenado.
 * **ZREMRANGEBYSCORE** : Elimina elementos dentro de un rango de puntajes de un conjunto ordenado.
+
+## Hashes (Hash)
+
+* **HSET key field value** : Establece el valor de un campo en un hash.
+* **HGET key field** : Obtiene el valor de un campo en un hash.
+* **HDEL key field [field ...]** : Elimina uno o más campos de un hash.
+* **HGETALL key** : Obtiene todos los campos y valores de un hash.
+* **HKEYS key** : Obtiene todas las claves de un hash.
+* **HVALS key** : Obtiene todos los valores de un hash.
+* **HEXISTS key field** : Verifica si un campo existe en un hash.
+* **HINCRBY key field increment** : Incrementa el valor de un campo en un hash en una cantidad específica.
+
+## Streams (Flujos):
+
+* **XADD streamID [MAXLEN ~ maxlen] field1 value1 [field2 value2 ...]** : Agrega un nuevo mensaje al stream.
+* **XREAD [COUNT count] [BLOCK milliseconds] STREAMS streamID [streamID ...] ID** : Lee mensajes de uno o más streams.
+* **XRANGE streamID start end [COUNT count]** : Obtiene mensajes dentro de un rango de IDs.
+* **XREVRANGE streamID end start [COUNT count]** : Obtiene mensajes dentro de un rango de IDs en orden inverso.
+* **XLEN streamID** : Obtiene la longitud (número de mensajes) de un stream.
+* **XTRIM streamID MAXLEN [~] count** : Trunca el stream manteniendo solo un número máximo de mensajes.
+* **XGROUP CREATE key groupname id_or_stream$** : Crea un nuevo grupo de consumidores en un stream.
+* **XREADGROUP GROUP groupname consumername [COUNT count] [BLOCK milliseconds] STREAMS streamID [streamID ...] ID** : Lee mensajes de un stream en un grupo de consumidores específico.
+* **XACK streamID groupname ID [ID ...]** : Confirma la recepción de uno o más mensajes en un grupo de consumidores.

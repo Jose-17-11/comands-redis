@@ -32,3 +32,14 @@
 * **SMEMBERS** : Devuelve todos los miembros de un conjunto.
 * **SISMEMBER** : Verifica si un miembro específico está presente en un conjunto.
 * **SREM** : Elimina uno o más miembros de un conjunto.
+
+## Comandos de conjuntos ordenados
+* **ZADD** : Agrega un miembro con un puntaje a un conjunto ordenado especificado. Si el conjunto ordenado no existe, se crea antes de agregar el miembro.
+* **ZDIFF** : Devuelve la diferencia entre múltiples conjuntos ordenados. Es decir, los elementos que están presentes en el primer conjunto ordenado pero no en los otros conjuntos ordenados especificados.
+* **ZUNION** : Devuelve la unión de múltiples conjuntos ordenados. Es decir, todos los elementos únicos presentes en todos los conjuntos ordenados especificados.
+* **ZINTER** : Devuelve la intersección de múltiples conjuntos ordenados en Redis. Es decir, los elementos que están presentes en todos los conjuntos ordenados especificados.
+* **ZCARD** : Devuelve el número de elementos en un conjunto ordenado.
+* **ZRANGE** : Devuelve un rango de elementos de un conjunto ordenado, según el índice de ordenación.
+* **ZSCORE** : Devuelve el puntaje de un miembro específico en un conjunto ordenado.
+* **ZREMRANGEBYRANK** : Elimina elementos dentro de un rango de índices de ordenación de un conjunto ordenado.
+* **ZREMRANGEBYSCORE** : Elimina elementos dentro de un rango de puntajes de un conjunto ordenado.

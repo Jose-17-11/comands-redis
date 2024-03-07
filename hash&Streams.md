@@ -24,7 +24,6 @@ https://redis-io.translate.goog/docs/data-types/hashes/?_x_tr_sl=auto&_x_tr_tl=e
 
 XADD:
 * clave: El nombre de la clave del stream al que se añadirá el elemento.
-* MAXLEN [~][count]: (Opcional) Especifica un límite de longitud para el stream. Puedes usar el modificador "~" para especificar que el límite se aplica al número de elementos en lugar de bytes. "count" es el límite de elementos o bytes, según el modificador utilizado.
 * ID id: (Opcional) Especifica el ID para el elemento añadido. Si no se proporciona, Redis generará automáticamente un ID único.
 * campo1 valor1 [campo2 valor2 ...]: Los pares campo-valor que constituyen los datos del elemento a añadir.
 
